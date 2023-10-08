@@ -1,0 +1,140 @@
+#cont {
+    width: 100%;
+    height: 9rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.range-area {
+    width: 27rem;
+    height: 100%;
+    background-color: var(--secendery-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 1px 600px aqua;
+}
+
+.emoji-box {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.8rem;
+    padding: 0 1rem;
+}
+
+.range-box {
+    width: 100%;
+    height: 55%;
+    padding: .1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.range-box form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#rng {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-image: linear-gradient(to right, red, orangered, orange, yellow, lime);
+    height: 0.5rem;
+    border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+    background-image: linear-gradient(to right, red, orangered, orange, yellow, lime);
+    height: 0.5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -5px;
+    background-color: #5cd5eb;
+    height: 1.05rem;
+    border-radius: 50%;
+    width: 1.05rem;
+}
+
+.msg-box {
+    display: none;
+    width: 80%;
+    min-height: 5rem;
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.red-msg {
+    background: rgba(255, 0, 0, 0.27);
+    border: 2px dotted red;
+    text-shadow: 0px 1px 10px red, 0px 1px 10px white, 0px 1px 10px red, 0px 1px 10px white;
+}
+
+.green-msg {
+    background: rgba(0, 255, 0, 0.27);
+    text-shadow: 0px 1px 10px green, 0px 1px 10px white, 0px 1px 10px green, 0px 1px 10px white;
+    border: 2px dotted lime;
+}
+
+.orangered-msg {
+    background: rgba(255, 68, 0, 0.27);
+    text-shadow: 0px 1px 10px orangered, 0px 1px 10px white, 0px 1px 10px orangered, 0px 1px 10px white;
+    border: 2px dotted orangered;
+}
+
+.orange-msg {
+    background: rgba(255, 166, 0, 0.27);
+    text-shadow: 0px 1px 10px orange, 0px 1px 10px white, 0px 1px 10px orange, 0px 1px 10px white;
+    border: 2px dotted orange;
+}
+
+.yellow-msg {
+    background: rgba(255, 255, 0, 0.27);
+    text-shadow: 0px 1px 10px yellow, 0px 1px 10px white, 0px 1px 10px yellow, 0px 1px 10px white;
+    border: 2px dotted yellow;
+}
+
+.green-msg {
+    background: rgba(0, 255, 0, 0.27);
+    text-shadow: 0px 1px 10px lime, 0px 1px 10px white, 0px 1px 10px lime, 0px 1px 10px white;
+    border: 2px dotted lime;
+}
+
+@media screen and (max-width:900px) {
+    .msg-box {
+        padding: 1.2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .msg-box {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .emoji-box {
+        font-size: 1.5rem;
+    }
+}
